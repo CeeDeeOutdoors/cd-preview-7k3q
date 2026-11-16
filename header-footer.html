@@ -1,5 +1,6 @@
 <!doctype html><html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cee Dee Outdoors — shared header, footer &amp; signature marks (spec)</title>
+<title>Cee Dee Outdoors · shared header, footer &amp; signature marks (spec)</title>
+<meta name="description" content="Shared header and footer spec for Cee Dee Outdoors.">
 <link rel="stylesheet" href="assets/site.css">
 <style>
 body{background:#E9E6DD}
@@ -39,7 +40,8 @@ body{background:#E9E6DD}
 .sw div{height:120px;padding:14px;font-size:11px;font-weight:700;letter-spacing:.12em;display:flex;flex-direction:column;justify-content:flex-end}
 .type{padding:0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
 .type>div{background:var(--paper);padding:34px}
-</style></head><body>
+</style><link rel="icon" href="assets/svg/seal.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/polish.css">
+</head><body>
 <div class="spec">
  <div class="lab">01 · Desktop header (default) <span>Sticky · gloss black (top light catch, #202020 → #0A0A0A → #000) · 84 px · gold hairline, brightest at center</span></div>
  <div class="frame"><div class="note-bar">West Hill Outfitters is now <b>Cee Dee Outdoors</b><span class="nb-x"> · Same family. Same dogs.</span></div>
@@ -58,7 +60,7 @@ body{background:#E9E6DD}
   <a class="btn sm" href="home.html#plan">Plan Your Trip</a>
  </div>
  <a class="m-call" href="tel:6033812046">CALL</a>
- <a class="burger" href="#" aria-label="Menu"><i></i><i></i><i></i></a>
+ <button class="burger" type="button" aria-label="Open menu"><i></i><i></i><i></i></button>
 </div></header>
 </div>
  <div class="lab">02 · Desktop header after scrolling <span>Shrinks to 66 px · logo 54 → 42 px</span></div>
@@ -78,7 +80,7 @@ body{background:#E9E6DD}
   <a class="btn sm" href="home.html#plan">Plan Your Trip</a>
  </div>
  <a class="m-call" href="tel:6033812046">CALL</a>
- <a class="burger" href="#" aria-label="Menu"><i></i><i></i><i></i></a>
+ <button class="burger" type="button" aria-label="Open menu"><i></i><i></i><i></i></button>
 </div></header>
 </div>
  <div class="lab">03 · Mobile header, menu and sticky action bar <span>64 px header · CALL + menu · bottom bar on every page</span></div>
@@ -99,10 +101,10 @@ body{background:#E9E6DD}
   <a class="btn sm" href="home.html#plan">Plan Your Trip</a>
  </div>
  <a class="m-call" href="tel:6033812046">CALL</a>
- <a class="burger" href="#" aria-label="Menu"><i></i><i></i><i></i></a>
+ <button class="burger" type="button" aria-label="Open menu"><i></i><i></i><i></i></button>
 </div></header>
-<div class="sc"><a class="b2" href="#">Call / Text</a><a class="a" href="#">Plan Your Trip</a></div></div>
-  <div class="menu"><a href="#">Dog Training</a><a href="#">Winter Training 2027</a><a href="#">Hunts</a><a href="#">Fishing</a><a href="#">Our Story</a><a href="#">Results</a><div class="sm">Call / text Adam · 603-381-2046</div><a class="btn" href="#">Plan Your Trip</a></div>
+<div class="sc"><a class="b2" href="tel:6033812046">Call / Text</a><a class="a" href="home.html#plan">Plan Your Trip</a></div></div>
+  <div class="menu"><a href="dog-training.html">Dog Training</a><a href="winter-training.html">Winter Training 2027</a><a href="grouse-and-woodcock-hunting.html">Hunts</a><a href="fishing.html">Fishing</a><a href="about-us.html">Our Story</a><a href="trialing.html">Results</a><div class="sm">Call / text Adam · 603-381-2046</div><a class="btn" href="home.html#plan">Plan Your Trip</a></div>
   <div class="notes"><p><b>Building on Nicole's dark bar:</b> switch her charcoal strip to gloss black (#0A0A0A, or the gradient #202020 → #0A0A0A → #000 as a strip image) and add, in order: the reversed logo (left), six menu items in Montserrat 12.5 px caps with +0.16em tracking, the phone stack, the gold button, and a 1 px gold hairline at 35% under the bar.</p><p style="margin-top:12px"><b>Announcement strip</b> ("West Hill Outfitters is now Cee Dee Outdoors") sits above the header from Dec 1 for 6–12 months.</p><p style="margin-top:12px"><b>Seasonal button:</b> the gold header button and the mobile bar's gold half point to whatever matters most that month (Plan Your Trip by default; Reserve a Spot on dog pages; Book a Day on the rabbit page).</p></div>
  </div>
  <div class="lab">04 · Footer <span>Deep navy #0D1A30 → near-black · gold top hairline · fly divider · "formerly West Hill Outfitters" · seal</span></div>
@@ -252,10 +254,10 @@ body{background:#E9E6DD}
   <div class="ft-grid">
    <div class="ft-brand"><img src="assets/img/logo-reverse.png" alt="Cee Dee Outdoors">
     <div class="formerly">Formerly West Hill Outfitters</div>
-    <p>Bird dog training, guided hunts and fishing charters from the Dubriske family. Four generations in the outdoors.</p></div>
-   <div class="ft-col"><h4>Dogs</h4><a href="winter-training.html">Winter Training 2027</a><a href="dog-training.html">Bird Dog Training</a><a href="#">Grouse Camp</a><a href="#">Gun Dog</a><a href="#">Puppy Development</a><a href="trialing.html">Field Trialing</a></div>
-   <div class="ft-col"><h4>Hunts &amp; Water</h4><a href="rabbit-hunting.html">Rabbit Hunting</a><a href="grouse-and-woodcock-hunting.html">Grouse &amp; Woodcock</a><a href="bear-hunting.html">Bear Hunting</a><a href="fishing.html">Fishing Charters</a><a href="about-us.html">Our Story</a><a href="#">Photo Gallery</a></div>
-   <div class="ft-col ft-contact"><h4>Talk to Adam</h4><a class="big" href="tel:6033812046">603-381-2046</a><a href="mailto:guide@westhilloutfitters.com">guide@westhilloutfitters.com</a><a href="#">Troy NH · Pittsburg NH · Lakes Region NH · Hoffman NC</a><a href="#">Facebook</a></div>
+    <p>Bird dog training first. Guided grouse, woodcock, bear and snowshoe hare hunts, and landlocked salmon charters. Four generations of the Dubriske family.</p></div>
+   <div class="ft-col"><h4>Dogs</h4><a href="dog-training.html">Bird Dog Training</a><a href="winter-training.html">Winter Training 2027</a><a href="dog-training.html#grouse-camp">Grouse Camp</a><a href="dog-training.html#tune-up">Pre-Season Tune-Up</a><a href="dog-training.html#puppy">Puppy Development</a><a href="trialing.html">Field Trial Results</a></div>
+   <div class="ft-col"><h4>Hunts &amp; Water</h4><a href="grouse-and-woodcock-hunting.html">Grouse &amp; Woodcock</a><a href="bear-hunting.html">Bear Hunting</a><a href="rabbit-hunting.html">Rabbit Hunting</a><a href="fishing.html">Fishing Charters</a><a href="about-us.html">Our Story</a><a href="home.html#field">From the Field</a></div>
+   <div class="ft-col ft-contact"><h4>Talk to Adam</h4><a class="big" href="tel:6033812046">603-381-2046</a><a href="mailto:guide@westhilloutfitters.com">guide@westhilloutfitters.com</a><a href="about-us.html#grounds">Troy, NH · Pittsburg, NH · Lakes Region · Hoffman, NC</a><a href="https://www.facebook.com/profile.php?id=61574648978734" target="_blank" rel="noopener">Facebook</a></div>
   </div>
   <div class="ft-bottom"><span>© 2026 Cee Dee Outdoors · formerly West Hill Outfitters · 54 W Hill Rd, Troy, NH 03465</span><span class="seal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
 <defs><path id="ring" d="M110,110 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
@@ -269,7 +271,7 @@ body{background:#E9E6DD}
 </svg></span></div>
  </div>
 </footer>
-<div class="sticky-cta"><a class="b" href="tel:6033812046">Call / Text</a><a class="a" href="#">Plan Your Trip</a></div>
+<div class="sticky-cta"><a class="b" href="tel:6033812046">Call / Text</a><a class="a" href="home.html#plan">Plan Your Trip</a></div>
 </div>
  <div class="lab">05 · Signature marks (drawn for Cee Dee; not stock) <span>SVG · gold on black or navy; the fly is layered gold tones</span></div>
  <div class="kit">

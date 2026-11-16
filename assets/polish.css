@@ -1,0 +1,114 @@
+/* polish.css — Nov 15, 2026 polish pass. Loaded last on every page. */
+
+/* ---------- Mobile menu (the burger now opens a real menu) ---------- */
+.burger{background:none;border:0;cursor:pointer;padding:0}
+.m-menu{position:fixed;inset:0;z-index:200;background:radial-gradient(120% 50% at 50% -10%,rgba(255,255,255,.06),rgba(255,255,255,0) 60%),#050505;color:#fff;display:flex;flex-direction:column;padding:18px 22px 28px;overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s .3s}
+.m-menu.open{opacity:1;visibility:visible;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.m-menu .mm-top{display:flex;align-items:center;justify-content:space-between;height:44px;margin-bottom:18px}
+.m-menu .mm-top img{height:38px;width:auto}
+.m-menu .mm-x{width:44px;height:44px;border:1px solid rgba(237,199,88,.5);background:none;color:var(--goldb);font-size:26px;line-height:1;cursor:pointer;border-radius:2px}
+.m-menu nav{display:flex;flex-direction:column;border-top:1px solid rgba(203,171,77,.3)}
+.m-menu nav a{display:flex;justify-content:space-between;align-items:center;min-height:54px;padding:6px 2px;border-bottom:1px solid rgba(255,255,255,.09);color:#F1EFEA;text-decoration:none;font-family:Cinzel,serif;font-weight:700;font-size:20px;letter-spacing:.02em}
+.m-menu nav a small{font-family:Montserrat,sans-serif;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--silver)}
+.m-menu nav a.sub{font-family:Montserrat,sans-serif;font-size:14px;font-weight:600;letter-spacing:.04em;padding-left:18px;min-height:46px;color:#D9D9D9}
+.m-menu nav a.cur{color:var(--goldb)}
+.m-menu .mm-cta{margin-top:26px;display:grid;gap:10px}
+.m-menu .mm-cta .btn{justify-content:center}
+.m-menu .mm-fine{margin-top:18px;font-size:12px;color:#BDBDB9;text-align:center;line-height:1.6}
+.m-menu .mm-fine a{color:#BDBDB9}
+body.mm-lock{overflow:hidden}
+
+/* ---------- Working form fields (mockup boxes became real inputs) ---------- */
+input.in,textarea.in,select.sel{display:block;width:100%;height:48px;border:1px solid #CFCABD;background:#fff;border-radius:2px;font:500 16px/1.3 Montserrat,sans-serif;color:#0A0A0A;padding:0 14px;-webkit-appearance:none;appearance:none}
+textarea.in{height:104px;padding:12px 14px;resize:vertical}
+select.sel{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23765D18' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 14px center}
+input.in:focus,textarea.in:focus,select.sel:focus{outline:2px solid var(--goldb);outline-offset:1px;border-color:#765D18}
+.chips span{cursor:pointer;user-select:none;min-height:40px;display:inline-flex;align-items:center}
+.chips span:focus-visible{outline:2px solid var(--goldb);outline-offset:2px}
+button.btn{cursor:pointer;font-family:Montserrat,sans-serif}
+form .btn{width:100%;justify-content:center}
+form .sent{display:none;margin-top:12px;font-size:13px;text-align:center;color:#3E423F}
+form.was-sent .sent{display:block}
+
+/* ---------- Phone numbers that are now links ---------- */
+a.num{text-decoration:none}
+.refs .s a{color:inherit;text-decoration:none}
+
+/* ---------- Home: fishing tile (no photo yet) ---------- */
+.way .pn{display:none!important}
+@media (max-width:860px){
+ .way.need .art{top:20px;left:auto;right:18px;width:58%;opacity:.55}
+}
+
+/* ---------- Home: "The Cee Dee year" ---------- */
+.px-year{background:linear-gradient(180deg,#0E0E0E 0%,#0A0A0A 50%,#050505 100%);color:#fff;padding:130px 0 120px;border-top:1px solid rgba(203,171,77,.22)}
+.px-year .hd{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:46px}
+.px-year .hd h2{font-size:clamp(34px,4.2vw,58px);margin-top:16px}
+.px-year .hd p{max-width:440px;color:#D2D2CF;font-size:16px;line-height:1.7}
+.px-year ol{list-style:none;border-top:1px solid rgba(203,171,77,.45)}
+.px-year li{display:grid;grid-template-columns:230px 1fr auto;gap:28px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.px-year .when{font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--goldb)}
+.px-year h3{font-size:24px;margin-bottom:4px}
+.px-year p{font-size:15px;color:#CFCFCB;line-height:1.55}
+.px-year li a{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--goldb);text-decoration:none;white-space:nowrap;padding:12px 0}
+.px-year li.core{background:linear-gradient(90deg,rgba(237,199,88,.08),rgba(237,199,88,0) 70%)}
+.px-year li.core .when{color:#fff}
+@media (max-width:860px){
+ .px-year{padding:80px 0 70px}
+ .px-year .hd{display:block;margin-bottom:30px}.px-year .hd p{margin-top:14px}
+ .px-year li{grid-template-columns:1fr;gap:6px;padding:20px 0}
+ .px-year h3{font-size:21px}
+ .px-year li a{padding:8px 0 0}
+}
+
+/* ---------- Dog Training: straight prices ---------- */
+.px-rates{background:var(--bone);color:var(--ink);padding:120px 0}
+.px-rates .hd{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:40px}
+.px-rates .hd h2{font-size:clamp(34px,4vw,56px);margin-top:16px}
+.px-rates .hd p{max-width:430px;color:#3E423F;font-size:16px;line-height:1.7}
+.px-rates .tbl{background:var(--paper);box-shadow:0 24px 60px rgba(10,10,10,.12);border-top:3px solid var(--goldb)}
+.px-rates .row{display:grid;grid-template-columns:1.1fr 2fr auto;gap:30px;align-items:center;padding:28px 36px;border-bottom:1px solid rgba(10,10,10,.1);scroll-margin-top:110px}
+.px-rates .row:last-child{border-bottom:0}
+.px-rates .row .k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:#765D18;margin-bottom:6px}
+.px-rates .row h3{font-size:24px}
+.px-rates .row p{font-size:15px;color:#3E423F;line-height:1.6}
+.px-rates .row .pr{font-family:Cinzel,serif;font-weight:700;font-size:34px;text-align:right;white-space:nowrap}
+.px-rates .row .pr small{display:block;font-family:Montserrat,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-top:4px}
+.px-rates .row .pr.ask{font-size:18px}
+.px-rates .row.hl{background:linear-gradient(90deg,rgba(237,199,88,.16),rgba(237,199,88,0) 75%)}
+.px-rates .note{margin-top:22px;font-size:14px;color:#3E423F}
+.px-rates .note a{color:#765D18;font-weight:700}
+@media (max-width:860px){
+ .px-rates{padding:76px 0}
+ .px-rates .hd{display:block;margin-bottom:28px}.px-rates .hd p{margin-top:14px}
+ .px-rates .row{grid-template-columns:1fr;gap:8px;padding:22px 20px}
+ .px-rates .row .pr{text-align:left;font-size:30px}
+}
+
+/* ---------- Small fixes ---------- */
+.ch .num{font-family:Cinzel,serif}
+.xlink a,.upland a{white-space:normal}
+.upland a{color:var(--goldb);font-weight:700;margin-left:6px}
+:target{scroll-margin-top:100px}
+section[id]{scroll-margin-top:70px}
+@media (max-width:860px){.wc .no{font-family:Montserrat,sans-serif;letter-spacing:.2em}}
+
+/* ---------- Round 2 fixes from the 390px audit ---------- */
+.page .stamp{top:-30px;bottom:auto;right:12px;width:74px}
+.wc .no{font-size:22px!important;letter-spacing:.12em!important}
+@media (max-width:860px){
+ /* Home hero: logo sits above the type, never behind it */
+ .lhero{height:auto!important;min-height:calc(100svh - 94px);max-height:none!important;display:flex;flex-direction:column;justify-content:flex-end}
+ .lhero .wrap{height:auto!important;padding-top:250px!important}
+ .lhero .lmark{width:270px!important;top:34px!important}
+ .lhero .ctas .btn.ghost{display:none}
+ .lhero .ctas .btn{width:100%;justify-content:center}
+ /* Home fishing tile: room for the fly above the words */
+ .way.need{min-height:340px}
+ .way.need .art{top:56px;left:24px;right:auto;width:70%;opacity:.5}
+ /* Winter Training hero: keep the setter's head in frame */
+ .whero .bg{inset:0 0 54% 0!important;background-position:18% 4%!important;transform:none!important}
+ /* Results hero: ribbons clear of the eyebrow */
+ .thero .ros-a{width:122px!important;top:3%!important}.thero .ros-b{width:92px!important;top:6%!important}
+}
+@media (max-width:860px){.way.need{min-height:390px}.way.need .art{top:44px;width:64%}}
